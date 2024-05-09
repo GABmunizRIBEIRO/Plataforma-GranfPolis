@@ -1,0 +1,418 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Acompanhamento</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+
+  <!-- custom menu -->
+
+  <li class="nav-item" style="margin-bottom: 1px; display: flex; justify-content: flex-end;"> <!-- Adicionando flexbox para alinhar à direita -->
+    <a class="nav-link" href="{% url 'logout' %}" style="font-size: 18px; margin-top: -10px; letter-spacing: 1px;">Logout</a>
+</li>
+  <!-- end skill section -->
+
+  <!-- do section -->
+  <section class="do_section layout_padding">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          Acompanhamento
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box bg-red">
+            <div class="img-box">
+              <a href="https://app.powerbi.com/view?r=eyJrIjoiNzFlZWM5ZmEtMTZjMy00OWM2LTlkNzYtZTJlNzI5ODUxNTliIiwidCI6ImUwZTA2MmQ2LTcxNzctNDIyMS05ZTQ4LTkxOGMzYzE2OGE2NyJ9" target="_blank">
+                <img src="{% static 'images/city.png' %}" alt="" />
+              </a>
+            </div>
+            <div class="detail-box">
+              <h6>
+                Águas Mornas
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box" style="background-color: #eda621;">
+            <div class="img-box">
+            <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+            <img src="{% static 'images/city.png' %}" alt="" />
+            </a>
+            </div>
+            <div class="detail-box">
+              <h6>
+                Alfredo Wagner
+              </h6>
+            </div>
+          </div>
+        </div>        
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box bg-red">
+            <div class="img-box">
+              <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+              <img src="{% static 'images/city.png' %}" alt="" />
+            </a>
+            </div>
+            <div class="detail-box">
+              <h6>
+                Angelina
+              </h6>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="content-box bg-red" style="background-color: #eda621;">
+              <div class="img-box">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiZGQ2OWExYWYtOTUxZS00YWU2LWI1NjgtMjM0NDhmMmFiYjVlIiwidCI6ImUwZTA2MmQ2LTcxNzctNDIyMS05ZTQ4LTkxOGMzYzE2OGE2NyJ9" target="_blank">
+                <img src="{% static 'images/city.png' %}" alt="" />
+              </a>
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Anitápolis
+                </h6>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="content-box bg-red" style="background-color: #eda621;">
+                <div class="img-box">
+                  <a href="https://app.powerbi.com/view?r=eyJrIjoiMmViZDBiZDAtY2M1Zi00Y2UxLThjY2YtZGU3MzRlZmMxNzYwIiwidCI6ImUwZTA2MmQ2LTcxNzctNDIyMS05ZTQ4LTkxOGMzYzE2OGE2NyJ9" target="_blank">
+                  <img src="{% static 'images/city.png' %}" alt="" />
+                </a>
+                </div>
+                <div class="detail-box">
+                  <h6>
+                    Antônio Carlos
+                  </h6>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="content-box bg-red">
+                  <div class="img-box">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiZTdiNDdiYjItNjMwOC00NGYyLWE2ZGUtNTJlODJlMmI3ZmI0IiwidCI6ImUwZTA2MmQ2LTcxNzctNDIyMS05ZTQ4LTkxOGMzYzE2OGE2NyJ9" target="_blank">
+                    <img src="{% static 'images/city.png' %}" alt="" />
+                  </a>
+                  </div>
+                  <div class="detail-box">
+                    <h6>
+                      Biguaçu
+                    </h6>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="content-box bg-red" style="background-color: #eda621;">
+                    <div class="img-box">
+                      <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                      <img src="{% static 'images/city.png' %}" alt="" />
+                    </a>
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Canelinha
+                      </h6>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="content-box bg-red">
+                      <div class="img-box">
+                        <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                        <img src="{% static 'images/city.png' %}" alt="" />
+                      </a>
+                      </div>
+                      <div class="detail-box">
+                        <h6>
+                          Florianópolis
+                        </h6>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                      <div class="content-box bg-red">
+                        <div class="img-box">
+                          <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                          <img src="{% static 'images/city.png' %}" alt="" />
+                        </a>
+                        </div>
+                        <div class="detail-box">
+                          <h6>
+                            Garopaba
+                          </h6>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                        <div class="content-box bg-red" style="background-color: #eda621;">
+                          <div class="img-box">
+                            <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                            <img src="{% static 'images/city.png' %}" alt="" />
+                          </a>
+                          </div>
+                          <div class="detail-box">
+                            <h6>
+                              Governador Celso Ramos
+                            </h6>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="content-box bg-red">
+                            <div class="img-box">
+                              <a href="https://app.powerbi.com/view?r=eyJrIjoiMjZlYTRlYzItYzdhZS00NmM1LWI3MzYtZTJiMDkxODIwN2JkIiwidCI6ImUwZTA2MmQ2LTcxNzctNDIyMS05ZTQ4LTkxOGMzYzE2OGE2NyJ9" target="_blank">
+                              <img src="{% static 'images/city.png' %}" alt="" />
+                            </a>
+                            </div>
+                            <div class="detail-box">
+                              <h6>
+                                Leoberto Leal
+                              </h6>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <div class="content-box bg-red" style="background-color: #eda621;">
+                              <div class="img-box">
+                                <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                                <img src="{% static 'images/city.png' %}" alt="" />
+                              </a>
+                              </div>
+                              <div class="detail-box">
+                                <h6>
+                                  Major Gercino
+                                </h6>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="content-box bg-red" style="background-color: #eda621;">
+                                <div class="img-box">
+                                  <a href="https://app.powerbi.com/view?r=eyJrIjoiMGYxNWFkZWEtMWU3My00ODA3LWI5NGYtMjdmZTFhN2UyYTQ2IiwidCI6ImUwZTA2MmQ2LTcxNzctNDIyMS05ZTQ4LTkxOGMzYzE2OGE2NyJ9" target="_blank">
+                                  <img src="{% static 'images/city.png' %}" alt="" />
+                                </a>
+                                </div>
+                                <div class="detail-box">
+                                  <h6>
+                                    Nova Trento
+                                  </h6>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3 col-sm-6">
+                                <div class="content-box bg-red" >
+                                  <div class="img-box">
+                                    <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                                    <img src="{% static 'images/city.png' %}" alt="" />
+                                  </a>
+                                  </div>
+                                  <div class="detail-box">
+                                    <h6>
+                                      Palhoça
+                                    </h6>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                  <div class="content-box bg-red" style="background-color: #eda621;">
+                                    <div class="img-box">
+                                      <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                                      <img src="{% static 'images/city.png' %}" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="detail-box">
+                                      <h6>
+                                        Paulo Lopes
+                                      </h6>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 col-sm-6">
+                                    <div class="content-box bg-red">
+                                      <div class="img-box">
+                                        <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                                        <img src="{% static 'images/city.png' %}" alt="" />
+                                      </a>
+                                      </div>
+                                      <div class="detail-box">
+                                        <h6>
+                                          Rancho Queimado
+                                        </h6>
+                                      </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                      <div class="content-box bg-red">
+                                        <div class="img-box">
+                                          <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                                          <img src="{% static 'images/city.png' %}" alt="" />
+                                        </a>
+                                        </div>
+                                        <div class="detail-box">
+                                          <h6>
+                                            Santo Amaro da Imperatriz
+                                          </h6>
+                                        </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-3 col-sm-6">
+                                        <div class="content-box bg-red" style="background-color: #eda621;">
+                                          <div class="img-box">
+                                            <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                                            <img src="{% static 'images/city.png' %}" alt="" />
+                                          </a>
+                                          </div>
+                                          <div class="detail-box">
+                                            <h6>
+                                              São Bonifácio
+                                            </h6>
+                                          </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                          <div class="content-box bg-red">
+                                            <div class="img-box">
+                                              <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                                              <img src="{% static 'images/city.png' %}" alt="" />
+                                            </a>
+                                            </div>
+                                            <div class="detail-box">
+                                              <h6>
+                                                São José
+                                              </h6>
+                                            </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3 col-sm-6">
+                                            <div class="content-box bg-red"style="background-color: #eda621;">
+                                              <div class="img-box">
+                                                <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                                                <img src="{% static 'images/city.png' %}" alt="" />
+                                              </a>
+                                              </div>
+                                              <div class="detail-box">
+                                                <h6>
+                                                  São Pedro de Alcântara
+                                                </h6>
+                                              </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                              <div class="content-box bg-red"style="background-color: #eda621;">
+                                                <div class="img-box">
+                                                  <a href="https://granfpolis.org.br/municipios-da-regiao/" target="_blank">
+                                                  <img src="{% static 'images/city.png' %}" alt="" />
+                                                </a>
+                                                </div>
+                                                <div class="detail-box">
+                                                  <h6>
+                                                    Tijucas
+                                                  </h6>
+                                                </div>
+                                                </div>
+                                              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end do section -->
+  <!-- skill section -->
+
+
+
+  <!-- info section -->
+  <section section class="info_section layout_padding-top layout_padding2-bottom" style="position: relative; z-index: 9999; padding: 50px 0; background-color: #0caa7d; color: aliceblue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_contact">
+            <h4>
+              Contate-nos
+            </h4>
+            <div>
+              <img src="{% static 'images/location.png' %}" alt="" />
+              <p>
+                Rua Paineiras, Casa 11 - Campus da USP-RP
+              </p>
+            </div>
+            <div>
+              <img src="{% static 'images/telephone.png' %}" alt="" />
+              <p>
+                 (16) 3315-3918
+              </p>
+            </div>
+            <div>
+              <img src="{% static 'images/envelope.png' %}" alt="" />
+              <p>
+                contato.lepes@usp.br
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="info_social">
+            <h4>
+              Redes Sociais
+            </h4>
+            <div class="social_container">
+              <div>
+                <a href="https://www.instagram.com/lepesusp/" target = "_blank">
+                  <img src="{% static 'images/instagram.png' %}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/company/lepesusp/mycompany/" target = "_blank">
+                  <img src="{% static 'images/linkedin.png' %}" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+
+  <!-- end info_section -->
+
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/circles.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+ <!-- Site desenvolvido para acompanhamento de campo para Granfpolis-->
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Acompanhamento-Granfpolis</title> <!-- titulo da aba da pagina-->
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<!-- Barra de navegação -->
+<div class="custom_menu-container" style="height: 80px;"> <!-- Definindo a altura da barra de navegação -->
+  <div class="container">
+    <div class="custom_menu">
+      <ul class="navbar-nav ">
+        
+        <a class="navbar-brand" href="https://www.lepes.fearp.usp.br/">
+          <img src="{% static 'images/simbolo-efeito.png' %}" alt="" style="width: 74px;" /> <!-- Definindo largura da imagem -->
+          <span style="color: white; font-weight: normal; font-size: 18px; letter-spacing: 1px; margin-top: -10px;"> <!-- Definindo a cor do texto como branco, removendo o negrito, ajustando o tamanho da fonte, espaçamento entre letras e subindo um pouco -->
+            Lepes
+          </span>
+        </a>
+
+        <ul class="navbar-nav ml-auto mr-5 justify-content-center"></ul> <!-- Botão -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <li class="nav-item active" style="margin-right: 40px; margin-bottom: 10px;"> <!-- Adicionando margem inferior -->
+          <a class="nav-link pl-0" href="#inicio" style="font-size: 18px; margin-top: -20px; letter-spacing: 1px;">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" style="margin-right: 40px; margin-bottom: 10px;"> <!-- Adicionando margem inferior -->
+          <a class="nav-link" href="#eapi" style="font-size: 18px;  margin-top: -20px; letter-spacing: 1px;">Eapi </a>
+        </li>
+        <li class="nav-item" style="margin-right: 40px; margin-bottom: 10px;"> <!-- Adicionando margem inferior -->
+          <a class="nav-link" href="#dimensoes" style="font-size: 18px; margin-top: -20px; letter-spacing: 1px;">Dimensões </a>
+        </li>
+        <li class="nav-item" style="margin-right: 40px; margin-bottom: 10px;"> <!-- Adicionando margem inferior -->
+          <a class="nav-link" href="#equipe" style="font-size: 18px; margin-top: -20px; letter-spacing: 1px;">Equipe</a>
+        </li>
+        <li class="nav-item" style="margin-right: 40px; margin-bottom: 10px;"> <!-- Adicionando margem inferior -->
+          <a class="nav-link" href="{% url 'dash' %}" style="font-size: 18px; margin-top: -20px; letter-spacing: 1px;">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- CORPO -->
+<!-- INICIO-->
+<body>
+  <div class="hero_area" style="height: 90vh;">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-5">
+          
+          <div class="call_btn">
+            <a href="">
+              
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-5">
+          
+          <div class="call_btn">
+            <a href="">
+              
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- inicio -->
+    <section class="slider_section" id = "inicio">
+      <div class="container-fluid">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-md-6 col-lg-5.3 offset-md-1 text-above mt-4">
+                          <div class="detail-box">
+                              <h1>
+                                  Pesquisando para transformar:
+                              </h1>
+                              <h4>
+                                  Por uma educação efetiva, integral e significativa.
+                              </h4>
+                              <p>
+                                  Instituição dedicada à elaboração de soluções de políticas sociais baseadas em evidência.
+                              </p>
+                          </div>
+                      </div>                      
+                      <div class="col-md-5 col-lg-4 text-right mt-3.95"> 
+                        <div class="img-box">
+                            <img src="{% static 'images/preferencial-sem-efeito.png' %}" alt="" style="max-width: 600px; height: auto;" />
+                        </div>
+                      </div>
+                             
+                      </div>
+                  </div>
+              </div>
+              <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="sr-only">Next</span>
+              </a> -->
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- EAPI -->
+  <section class="about_section layout_padding mt-1" style="position: relative; z-index: 9999; padding: 0px 0; background-color: #0caa7d; color: aliceblue;" id = "eapi">
+    <!-- Conteúdo da seção -->
+  <section class="about_section layout_padding mt-0" id = "eapi">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="detail-box;">
+            <div class="custom_heading-container" style="color: aliceblue; margin-bottom: 20px;">
+              <h1>
+                EAPI - Escala de Avaliação dos Ambientes de Aprendizagens dedicados à Primeira Infância
+              </h1>
+            </div>
+            <p>
+            </p>
+            <p>
+            </p>
+          
+            <p>
+              A EAPI é um instrumento de avaliação da qualidade de ambientes e experiências ofertados e vivenciados pelas crianças na Educação Infantil (EI). Ela é composta por duas entrevistas (professores e diretores) e um roteiro (utilizado durante períodos de observação).
+            </p>
+            <P>
+              Sua composição ocorreu por meio de um processo de alinhamento à Base Nacional Comum Curricular (BNCC) em uma parceria do LEPES e da Fundação Maria Cecilia Souto Vidigal com a Secretaria de Educação da Cidade de São Paulo. Além disso, o diálogo com secretarias de educação de outros municípios também trouxe importantes contribuições.
+
+              A escala original foi baseada em estudos realizados em diversos países, cujas evidências mostram que crianças aprendem melhor quando os adultos:
+            </p>
+            <P>
+              1 - As incentivam a se envolver diretamente com materiais;
+            </P>  
+            <P>
+              2 - Mostram a elas possibilidades de escolha em suas atividades e no uso de materiai;
+            </P>
+            <P>  
+              3 - As inserem em conversas que ampliam a sua compreensão acerca dos conhecimentos que estão sendo trabalhados; 
+            </P>
+            <P>  
+              4 - Relacionam as atividades propostas à experiências reais e/ou rotineiras.
+            </P>
+            <P>
+              
+             Assim, tais características são emblemáticas de uma abordagem pedagógica que se fundamenta no brincar e na centralidade da criança, contrastando com uma abordagem expositiva, na qual o adulto é o protagonista da interação, enquanto a criança assume um papel mais passivo de ouvinte e/ou repetidora. Além disso, a EAPI não é uma avaliação individual dos professores ou da equipe de funcionários, visto que além das entrevistas e do protocolo de observação (que se concentram na dinâmica interna das unidades educacionais), o questionário é aplicado às famílias, a fim de considerar o contexto familiar da criança. Tal consideração se mostra crucial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+  <!-- Dimensões da EAPI -->
+  
+  <section class="do_section layout_padding-bottom" id = "dimensoes">
+    <div class="container">
+      <div class="custom_heading-container" style="margin-top: 70px;" >
+        <h1>
+          Dimensões da EAPI
+        </h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-7">
+          <div class="content-box bg-red">
+            <div class="img-box">
+              <img src="{% static 'images/quadro-negro.png' %}" alt="" />
+            </div>
+            <div class="detail-box">
+              <h5>
+               <em> Infraestrutura </em>
+              </h5>
+              <p>
+               Engloba estrutura predial, materiais disponíveis às crianças e equipamentos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-7">
+          <div class="content-box bg-red">
+            <div class="img-box">
+              <img src="{% static 'images/linha-do-tempo.png' %}" alt="" />
+            </div>
+            <div class="detail-box">
+              <h5>
+               <em> Currículo, Práticas e Interações </em>
+              </h5>
+              <p>
+                Inclui planejamento de currículo e organização de tempo e espaços.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-7">
+          <div class="content-box bg-red">
+            <div class="img-box">
+              <img src="{% static 'images/equipe.png' %}" alt="" />
+            </div>
+            <div class="detail-box">
+              <h5>
+               <em> Equipe e Gestão </em>
+              </h5>
+              <p>
+                Abrange formação, engajamento e projeto político pedagógico.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-7">
+          <div class="content-box bg-red">
+            <div class="img-box">
+              <img src="{% static 'images/alimentacao-saudavel.png' %}" alt="" />
+            </div>
+            <div class="detail-box">
+              <h5>
+               <em> Alimentação </em>
+              </h5>
+              <p>
+                Aborda a alimentação das crianças no ambiente escolar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-7">
+          <div class="content-box bg-red">
+            <div class="img-box">
+              <img src="{% static 'images/camera-de-seguranca.png' %}" alt="" />
+            </div>
+            <div class="detail-box">
+              <h5>
+               <em> Segurança </em>
+              </h5>
+              <p>
+                Refere-se aos possíveis perigos que as crianças são expostas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-7">
+          <div class="content-box bg-red">
+            <div class="img-box">
+              <img src="{% static 'images/diversidade.png' %}" alt="" />
+            </div>
+            <div class="detail-box">
+              <h5>
+                <em> Diversidade Funcional </em>
+              </h5>
+              <p>
+                Avalia as adaptações da escola para crianças com diversidade funcional.
+              <p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end do section -->
+
+  <!-- portfolio section -->
+  <section class="portfolio_section layout_padding" id = "equipe">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h1>
+          Equipe
+        </h1>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <div class="box b-3">
+                <img src="{% static 'images/debi.png' %}" alt="" />
+                <h4 style="margin-top: 100px;">
+                  Déborah Rodrigues
+                </h4>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="box b-3">
+                <img src="{% static 'images/gab.png' %}" alt="" />
+                <h4 style="margin-top: 100px;">
+                  Gabriel Muniz
+                </h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="box b-3">
+                <img src="{% static 'images/arthur.png' %}" alt="" />
+                <h4 style="margin-top: 100px;">
+                  Arthur Maciel
+                </h4>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="box b-3">
+                <img src="{% static 'images/adnan.jpg' %}" alt="" />
+                <h4 style="margin-top: 100px;">
+                  Adnan Jebailey
+                </h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end portfolio section -->
+
+  
+
+  <!-- info section -->
+  <section section class="info_section layout_padding-top layout_padding2-bottom" style="position: relative; z-index: 9999; padding: 50px 0; background-color: #0caa7d; color: aliceblue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_contact">
+            <h4>
+              Contate-nos
+            </h4>
+            <div>
+              <img src="{% static 'images/location.png' %}" alt="" />
+              <p>
+                Rua Paineiras, Casa 11 - Campus da USP-RP
+              </p>
+            </div>
+            <div>
+              <img src="{% static 'images/telephone.png' %}" alt="" />
+              <p>
+                 (16) 3315-3918
+              </p>
+            </div>
+            <div>
+              <img src="{% static 'images/envelope.png' %}" alt="" />
+              <p>
+                contato.lepes@usp.br
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="info_social">
+            <h4>
+              Redes Sociais
+            </h4>
+            <div class="social_container">
+              <div>
+                <a href="https://www.instagram.com/lepesusp/" target = "_blank">
+                  <img src="{% static 'images/instagram.png' %}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/company/lepesusp/mycompany/" target = "_blank">
+                  <img src="{% static 'images/linkedin.png' %}" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/circles.min.js"></script>
+  <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
